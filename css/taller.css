@@ -1,0 +1,108 @@
+/* ------------------- TALLER HERO ------------------- */
+
+.taller-hero-wrapper{
+    min-height: 60vh;
+  }
+  
+  .taller-hero-bg{
+    background: url('../img/taller-hero.webp') center/cover no-repeat;
+    min-height: 60vh;
+    position: relative;
+  }
+  
+  .taller-hero-bg::after{
+    content:'';
+    position:absolute;
+    inset:0;
+    background: rgba(0,0,0,0.65);
+  }
+  
+  .taller-hero-bg > .container{
+    position:relative;
+    z-index:2;
+  }
+  
+  .taller-hero-bg h1,
+  .taller-hero-bg p,
+  .taller-hero-bg a.btn {
+    color:#fff !important;
+    text-shadow:0 3px 14px rgba(0,0,0,.9);
+  }
+  
+  .taller-hero-bg h1{
+    letter-spacing:-.5px;
+  }
+  
+  
+  /* --------- INFO SECTION --------- */
+  
+  .taller-info-wrap{
+    display:flex;
+    align-items:center;
+  }
+  
+  .taller-services-box{
+    background:#f2f2f2;
+    padding:2.2rem 2rem;
+    border-radius:14px;
+    font-size:1.05rem;
+  }
+  
+  @media(min-width:992px){
+    .taller-services-ul{
+      columns: 2;
+      column-gap: 2rem;
+    }
+  }
+  
+  .taller-services-ul li{
+    line-height:1.5;
+    margin-bottom:.9rem !important;
+    font-weight:500;
+  }
+  
+  .taller-services-ul i{
+    font-size:1.1rem;
+  }
+  
+  /* PRICING TALLER */
+.pricing-card{
+    border:1px solid #eee;
+    transition:all .25s ease;
+    border-radius:12px;
+  }
+  
+  .pricing-card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 8px 30px rgba(0,0,0,.12);
+  }
+  
+  .pricing-card .price{
+    color:#D91E2E; /* rojo paleta */
+  }
+  
+  .pricing-card.featured{
+    border:2px solid #D91E2E;
+  }
+
+  /* igualar altura tarjetas precios */
+.pricing-card{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+  }
+  
+  /* para botón igual altura bottom */
+  .pricing-card a.btn{
+    margin-top:auto;
+  }
+/* destacamos restauración clásica en dropdown */
+.dropdown-menu .resta-link{
+    color:#03A696 !important;
+    font-weight:700;
+}
+.dropdown-menu .resta-link:hover{
+    background:#03A696 !important;
+    color:#fff !important;
+}
+  

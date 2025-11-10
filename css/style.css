@@ -185,31 +185,39 @@
 
 /******** MOBILE ********/
 @media(max-width: 991px){
-    .navbar-collapse{
-        background:#fff;
-        padding:1rem 0;
-    }
-    #navbarCollapse{
-        padding-left:14px;
-        padding-right:14px;
-    }
-@media(max-width: 991px) {
+  .navbar-collapse{
+      background:#fff;
+      padding:1rem 0;
+  }
+  #navbarCollapse{
+      padding-left:14px;
+      padding-right:14px;
+  }
+
   .navbar-nav .nav-link {
-    padding: 18px 14px;
-    width: 100%;
-    border-bottom: 1px solid #eee;
-    border-radius: 3px;
+      padding: 18px 14px;
+      width: 100%;
+      border-bottom: 1px solid #eee;
+      border-radius: 3px;
   }
 
   .navbar-nav .nav-link:active,
   .navbar-nav .nav-link:focus {
-    background: var(--primary);
-    color: #fff !important;
-    padding-left: 22px;  /* respiración interior real mobile */
-    padding-right: 22px; /* que no quede pegado en borde */
+      background: var(--primary);
+      color: #fff !important;
+      padding-left: 22px;
+      padding-right: 22px;
   }
 }
 
+/* SUB RESTAURACION DESTACADO */
+.dropdown-resta{
+  border-left:4px solid var(--blue);
+  font-weight:700;
+}
+.dropdown-resta:hover{
+  background:var(--blue) !important;
+  color:#fff !important;
 }
 
 /******** DESKTOP CTA FULL HEIGHT ********/
@@ -226,6 +234,31 @@
         transition:background-color .3s ease, border-color .3s ease, color .3s ease;
     }
 }
+
+/* TABLET MEDIO ENTRE mobile y desktop */
+@media(min-width:992px) and (max-width:1200px){
+  
+  .navbar {
+    height:72px;
+  }
+
+  .navbar-light .navbar-nav .nav-link{
+    margin-right:22px;
+    padding:22px 0;
+    font-size:14px;   /* 1px menos deja respirar */
+  }
+
+  .navbar-brand{
+    padding:0 1.4rem !important;
+  }
+
+  .navbar .btn-primary{
+    padding:0 32px !important;
+    height:72px !important;
+  }
+
+}
+
 /*************************************************
  * CAROUSEL / HERO FINAL
  *************************************************/
@@ -410,11 +443,96 @@
 .team-item .team-overlay .btn:hover{ color:#fff; background:var(--primary); }
 
   /*************************************************
-   * TESTIMONIOS (si se usan)
-   *************************************************/
-  .testimonial-carousel .owl-item.center .testimonial-text { background: var(--secondary); color: #fff; }
-  .testimonial-carousel .owl-dots .owl-dot.active { background: var(--secondary); border-color: var(--secondary); }
-  
+/* HERO SUPLEMENTOS full banner */
+.suplementos-hero-bg{
+  background:url('../img/suplementos-hero.webp') center/cover no-repeat;
+  min-height:65vh;
+  position:relative;
+}
+
+.suplementos-hero-bg::after{
+  content:'';
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,.55);
+}
+
+.suplementos-hero-bg > .container{
+  position:relative;
+  z-index:2;
+}
+
+.suplementos-hero-bg h1,
+.suplementos-hero-bg p,
+.suplementos-hero-bg a.btn{
+  color:#fff !important;
+}
+
+/**********************************************
+ * SUPLEMENTOS – PRODUCT GRID CARDS
+ **********************************************/
+ .supp-grid{
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  gap:40px;
+}
+
+@media(max-width:1199px){
+  .supp-grid{ grid-template-columns: repeat(3,1fr); }
+}
+@media(max-width:991px){
+  .supp-grid{ grid-template-columns: repeat(2,1fr); gap:32px; }
+}
+@media(max-width:575px){
+  .supp-grid{ grid-template-columns: 1fr; gap:28px; }
+}
+
+/* card */
+.supp-card{
+  background:#fff;
+  border-radius:6px;
+  border:0;
+  overflow:hidden;
+  transition:.3s ease;
+  text-align:center;
+  padding-bottom:1.5rem;
+}
+
+/* imagen */
+.supp-card img{
+  width:100%;
+  height:260px;
+  object-fit:cover;
+  transition:transform .45s ease;
+}
+.supp-card:hover img{
+  transform:scale(1.04);
+}
+
+/* título */
+.supp-card h5{
+  font-family:'Montserrat';
+  font-weight:700;
+  font-size:1.15rem;
+  margin-top:1.25rem;
+  margin-bottom:.5rem;
+}
+
+/* marca */
+.supp-card small{
+  opacity:.75;
+  font-size:.92rem;
+}
+
+/* link click product */
+.supp-card a{
+  color:var(--dark);
+  text-decoration:none;
+}
+.supp-card a:hover h5{
+  color:var(--blue);
+}
+
   /*************************************************
    * FOOTER
    *************************************************/
