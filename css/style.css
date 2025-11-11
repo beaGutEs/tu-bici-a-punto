@@ -605,3 +605,96 @@
     justify-content:center;
     font-size: 1rem;
 }
+
+/*************************************************
+ * FIXES GLOBALES & MODO OSCURO
+ *************************************************/
+
+/* Fuerza modo claro en todos los navegadores */
+html {
+  color-scheme: light only;
+}
+
+/* --- MODO OSCURO: evitar inversión de colores por Chrome/Android --- */
+@media (prefers-color-scheme: dark) {
+  body,
+  .navbar,
+  .navbar-collapse,
+  .dropdown-menu,
+  .footer,
+  .card,
+  section,
+  .venta-hero-bg,
+  .suplementos-hero-bg {
+    background-color: #fff !important;
+    color: var(--gray-700) !important;
+  }
+
+  .navbar a.nav-link,
+  .dropdown-item {
+    color: var(--dark) !important;
+  }
+
+  .navbar a.nav-link.active,
+  .dropdown-item.active,
+  .dropdown-item:active {
+    color: var(--primary) !important;
+    background-color: transparent !important;
+  }
+
+  .btn-primary {
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+    color: #fff !important;
+  }
+
+  .btn-outline-primary {
+    color: var(--primary) !important;
+    border-color: var(--primary) !important;
+    background: transparent !important;
+  }
+
+  .btn-outline-primary:hover {
+    background-color: var(--primary) !important;
+    color: #fff !important;
+  }
+
+  /* Íconos topbar y footer */
+  .topbar-social .btn,
+  .footer .btn-social {
+    color: var(--primary) !important;
+    border-color: var(--primary) !important;
+  }
+
+  .footer {
+    background: var(--dark) !important;
+    color: #f5f5f5 !important;
+  }
+}
+
+/*************************************************
+ * MICROAJUSTES DE CONSISTENCIA GLOBAL
+ *************************************************/
+
+/* Evita que los subtítulos se pierdan en fondos oscuros */
+.hero-section p,
+.suplementos-hero-bg p,
+.venta-hero-bg p {
+  color: #fff !important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.85);
+  font-weight: 500;
+}
+
+/* Ajuste responsivo fino */
+@media (max-width: 575px) {
+  h1 { font-size: 1.8rem !important; }
+  h2 { font-size: 1.5rem !important; }
+  p, li { font-size: 0.97rem; }
+}
+
+/*************************************************
+ * CONTROL DE SCROLL SUAVE
+ *************************************************/
+html {
+  scroll-behavior: smooth;
+}
