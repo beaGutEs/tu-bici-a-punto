@@ -1,56 +1,56 @@
 /* ------------------- RESTAURACION HERO ------------------- */
 
-.restauracion-hero-wrapper{
+.restauracion-hero-wrapper {
     min-height: 60vh;
 }
 
-.restauracion-hero-bg{
+.restauracion-hero-bg {
     background: url('../img/restauracion-hero.webp') center/cover no-repeat;
     min-height: 60vh;
     position: relative;
 }
 
 /* overlay */
-.restauracion-hero-bg::after{
-    content:'';
-    position:absolute;
-    inset:0;
+.restauracion-hero-bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
     background: rgba(0,0,0,0.65);
 }
 
-.restauracion-hero-bg > .container{
-    position:relative;
-    z-index:2;
+.restauracion-hero-bg > .container {
+    position: relative;
+    z-index: 2;
 }
 
 /* texto hero */
 .restauracion-hero-bg h1,
 .restauracion-hero-bg p,
 .restauracion-hero-bg a.btn {
-    color:#fff !important;
-    text-shadow:0 3px 14px rgba(0,0,0,.95);
+    color: #fff !important;
+    text-shadow: 0 3px 14px rgba(0,0,0,.95);
 }
 
-.restauracion-hero-bg h1{
-    letter-spacing:-.5px;
+.restauracion-hero-bg h1 {
+    letter-spacing: -.5px;
 }
 
 /* STEPS RESTAURACION */
-.resta-step-card{
-    border-radius:12px;
-    background:#fff;
-  }
-  
-  .step-number{
-    display:block;
-    font-weight:800;
-    font-size:2.2rem;
-    color:#D91E2E; /* rojo marca */
-    margin-bottom:.75rem;
-    opacity:.9;
-  }
-  
-  /* separador suave secciones en restauración */
-section{
-    scroll-margin-top:100px;
+.resta-step-card {
+    border-radius: 12px;
+    background: #fff;
+}
+
+.step-number {
+    display: block;
+    font-weight: 800;
+    font-size: 2.2rem;
+    color: #D91E2E; /* rojo marca */
+    margin-bottom: .75rem;
+    opacity: .9;
+}
+
+/* separador suave secciones en restauración */
+section {
+    scroll-margin-top: 100px;
 }

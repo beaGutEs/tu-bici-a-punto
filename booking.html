@@ -16,7 +16,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
 
-
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
@@ -24,16 +23,24 @@
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- Color de interfaz navegador móvil -->
+    <meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-navbutton-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white-translucent">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0D0D0D">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 </head>
 
 <body>
+
     <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
@@ -41,7 +48,6 @@
         </div>
     </div>
     <!-- Spinner End -->
-
 
 <!-- Topbar Start -->
 <div class="container-fluid bg-light p-0">
@@ -74,12 +80,10 @@
 </div>
 <!-- Topbar End -->
 
-
-
 <!-- NAV -->
 <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
     <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-        <img src="img/logo.png" style="height:58px;">
+        <img src="img/logo.png" alt="Logo Tu Bici a Punto" style="height:58px;">
         <span class="brand-text ms-3">Tu Bici a Punto</span>
     </a>
     
@@ -111,69 +115,137 @@
     </div>
 </nav>
 
-  
+<!-- HERO -->
+<section class="py-5 bg-gradient-primary text-white text-center">
+    <div class="container">
+      <h1 class="display-5 fw-bold mb-3">Reserva tu cita</h1>
+      <p class="lead mb-0">Agenda fácilmente tu visita al taller. Te confirmaremos por WhatsApp o correo electrónico.</p>
+    </div>
+</section>
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-4 col-md-6">
-                    <h4 class="text-light mb-4">Contacto</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Calle del Rosario, 108, Socuéllamos (Ciudad Real)</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+34 623 602 702</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>tubiciapunto2025@gmail.com</p>
+<!-- FORMULARIO DE RESERVA -->
+<section class="py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="bg-light p-4 p-md-5 rounded-3 shadow-sm">
+            <h3 class="fw-bold mb-4 text-center">Formulario de reserva</h3>
+            
+            <form id="bookingForm" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="name" class="form-label fw-semibold">Nombre completo</label>
+                  <input type="text" class="form-control" id="name" placeholder="Tu nombre" required>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <h4 class="text-light mb-4">Horario</h4>
-                    <h6 class="text-light">Lunes - Viernes:</h6>
-                    <p class="mb-4">10.00 - 14.00</p><p class="mb-4">17.00 - 21.00</p>
-                    <h6 class="text-light">Sábados:</h6>
-                    <p class="mb-0">10.00 - 14.00</p>
+
+                <div class="col-md-6">
+                  <label for="email" class="form-label fw-semibold">Correo electrónico</label>
+                  <input type="email" class="form-control" id="email" placeholder="nombre@correo.com" required>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <h4 class="text-light mb-4">Síguenos</h4>
-                    <p>Conoce nuestros proyectos y novedades en redes sociales.</p>
-                    <div class="d-flex pt-2">
-                      <a class="btn btn-social me-2" href="https://www.facebook.com/people/Tu-bici-a-punto/61575602982686/" target="_blank" rel="noopener noreferrer">
-                          <i class="fab fa-facebook-f"></i>
-                      </a>
-                  
-                      <a class="btn btn-social" href="https://www.instagram.com/tubiciapunto/" target="_blank" rel="noopener noreferrer">
-                          <i class="fab fa-instagram"></i>
-                      </a>
-                  </div>                          
+
+                <div class="col-md-6">
+                  <label for="phone" class="form-label fw-semibold">Teléfono</label>
+                  <input type="tel" class="form-control" id="phone" placeholder="+34 623 602 702" required>
                 </div>
+
+                <div class="col-md-6">
+                  <label for="service" class="form-label fw-semibold">Tipo de servicio</label>
+                  <select id="service" class="form-select" required>
+                    <option value="">Selecciona una opción...</option>
+                    <option value="ajuste">Ajuste y puesta a punto</option>
+                    <option value="restauracion">Restauración de bicicleta clásica</option>
+                    <option value="mantenimiento">Mantenimiento general</option>
+                    <option value="personalizado">Otro servicio</option>
+                  </select>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="date" class="form-label fw-semibold">Fecha preferida</label>
+                  <input type="date" class="form-control" id="date" required>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="time" class="form-label fw-semibold">Hora aproximada</label>
+                  <input type="time" class="form-control" id="time">
+                </div>
+
+                <div class="col-12">
+                  <label for="message" class="form-label fw-semibold">Comentarios adicionales</label>
+                  <textarea id="message" class="form-control" rows="4" placeholder="Describe brevemente el trabajo o reparación"></textarea>
+                </div>
+
+                <div class="col-12 text-end">
+                  <button type="submit" class="btn btn-primary px-4">Enviar solicitud</button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="text-center mt-4">
+            <p class="mb-2">¿Prefieres escribirnos directamente?</p>
+            <a href="https://wa.me/34623602702?text=Hola!%20Quisiera%20reservar%20una%20cita%20para%20mi%20bici." target="_blank" class="btn btn-success">
+              <i class="fab fa-whatsapp me-2"></i> Reserva por WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-4 col-md-6">
+                <h4 class="text-light mb-4">Contacto</h4>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Calle del Rosario, 108, Socuéllamos (Ciudad Real)</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+34 623 602 702</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>tubiciapunto2025@gmail.com</p>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <h4 class="text-light mb-4">Horario</h4>
+                <h6 class="text-light">Lunes - Viernes:</h6>
+                <p class="mb-4">10.00 - 14.00</p>
+                <p class="mb-4">17.00 - 21.00</p>
+                <h6 class="text-light">Sábados:</h6>
+                <p class="mb-0">10.00 - 14.00</p>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <h4 class="text-light mb-4">Síguenos</h4>
+                <p>Conoce nuestros proyectos y novedades en redes sociales.</p>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-social me-2" href="https://www.facebook.com/people/Tu-bici-a-punto/61575602982686/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-social" href="https://www.instagram.com/tubiciapunto/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                </div>                          
             </div>
         </div>
-        <div class="container text-center">
-            <p class="mb-0">&copy; 2025 <strong>Tu Bici a Punto</strong>. Todos los derechos reservados.</p><br>
-        </div>
     </div>
-    <!-- Footer End -->
+    <div class="container text-center">
+        <p class="mb-0">&copy; 2025 <strong>Tu Bici a Punto</strong>. Todos los derechos reservados.</p><br>
+    </div>
+</div>
+<!-- Footer End -->
 
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top">
+    <i class="fas fa-chevron-up"></i>
+</a>
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top">
-        <i class="fas fa-chevron-up"></i>
-    </a>
-    
+<!-- JavaScript Libraries -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/tempusdominus/js/moment.min.js"></script>
+<script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+<script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
 </body>
 
 </html>
-

@@ -24,13 +24,22 @@
     <!-- Libraries Stylesheet -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet">
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- Color de interfaz navegador móvil -->
+    <meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-navbutton-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white-translucent">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0D0D0D">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+
+
 </head>
 
 <body>
@@ -184,34 +193,41 @@
 <section class="container-xxl py-5" id="about" aria-labelledby="about-title">
   <div class="container">
     <div class="row g-5 align-items-center">
-      
+
       <!-- Imagen (se muestra a la derecha en desktop) -->
       <div class="col-lg-6 order-lg-2">
         <div class="position-relative h-100 wow fadeIn" data-wow-delay="0.1s">
-          <img class="img-fluid w-100" src="img/about.jpg" alt="Taller de bicicletas clásicas en Socuéllamos" loading="lazy" style="object-fit:cover; height:100%; max-height:450px;">
+          <img class="img-fluid w-100" src="img/about.jpg" 
+               alt="Taller de bicicletas clásicas en Socuéllamos" 
+               loading="lazy" 
+               style="object-fit:cover; height:100%; max-height:450px;">
         </div>
       </div>
 
       <!-- Texto -->
       <div class="col-lg-6 order-lg-1 wow fadeInUp" data-wow-delay="0.15s">
-          <h6 class="text-primary text-uppercase">// Sobre Nosotros //</h6>
-          <h2 class="mb-4">Restauración con alma ciclista</h2>
+        
+        <h6 class="text-primary text-uppercase">// Sobre Nosotros //</h6>
 
-          <p class="mb-3">
-            Somos un taller joven en Socuéllamos especializado en devolver sensaciones a bicicletas que merecen seguir rodando. Reparación, puesta a punto, restauración y montajes hechos con mimo.
-          </p>
-          <p class="mb-3">
-            Trabajamos desde bicis clásicas a urbanas, MTB, eléctricas o infantiles. Si te gusta montar, mejorar y disfrutar cada salida: aquí encaja tu bici.
-          </p>
+        <!-- Título accesible con el ID necesario -->
+        <h2 class="mb-4" id="about-title">Restauración con alma ciclista</h2>
 
-          <ul class="list-unstyled small mb-4">
-              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Reparación, ajustes y servicio completo</li>
-              <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Repuestos y componentes para bicis nuevas y clásicas</li>
-              <li><i class="bi bi-check2-circle text-primary me-2"></i>Suplementación deportiva para potenciar rendimiento y recuperación</li>
-          </ul>            
+        <p class="mb-3">
+          Somos un taller joven en Socuéllamos especializado en devolver sensaciones a bicicletas que merecen seguir rodando. Reparación, puesta a punto, restauración y montajes hechos con mimo.
+        </p>
+        <p class="mb-3">
+          Trabajamos desde bicis clásicas a urbanas, MTB, eléctricas o infantiles. Si te gusta montar, mejorar y disfrutar cada salida: aquí encaja tu bici.
+        </p>
+
+        <ul class="list-unstyled small mb-4">
+          <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Reparación, ajustes y servicio completo</li>
+          <li class="mb-2"><i class="bi bi-check2-circle text-primary me-2"></i>Repuestos y componentes para bicis nuevas y clásicas</li>
+          <li><i class="bi bi-check2-circle text-primary me-2"></i>Suplementación deportiva para potenciar rendimiento y recuperación</li>
+        </ul>
 
         <a href="about.html" class="btn btn-outline-primary px-4 me-2">Saber más</a>
         <a href="booking.html" class="btn btn-primary px-4">Pide cita</a>
+
       </div>
 
     </div>

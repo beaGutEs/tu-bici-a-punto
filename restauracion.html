@@ -21,6 +21,13 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/restauracion.css" rel="stylesheet">
+
+    <!-- Color de interfaz navegador móvil -->
+    <meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-navbutton-color" content="#ffffff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white-translucent">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0D0D0D">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 </head>
 
 <body>
@@ -71,20 +78,15 @@
   
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <div class="navbar-nav ms-auto p-4 p-lg-0">
-        <!-- Añade la clase 'active' según la página -->
         <a href="index.html" class="nav-item nav-link">Inicio</a>
         <a href="about.html" class="nav-item nav-link">Sobre Nosotros</a>
   
-        <!-- Dropdown Servicios -->
         <div class="nav-item dropdown">
-          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
+          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Servicios</a>
   
           <div class="dropdown-menu m-0">
-            <!-- Columna 1 -->
             <a href="taller.html" class="dropdown-item">Taller de reparación</a>
             <a href="restauracion.html" class="dropdown-item dropdown-resta">Restauración clásicas</a>
-  
-            <!-- Columna 2 -->
             <a href="venta.html" class="dropdown-item">Venta</a>
             <a href="suplementos.html" class="dropdown-item">Suplementos</a>
           </div>
@@ -93,68 +95,67 @@
         <a href="contact.html" class="nav-item nav-link">Contacto</a>
       </div>
   
-      <a href="booking.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Reserva cita
-        <i class="fa fa-arrow-right ms-3"></i>
+      <a href="booking.html" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">
+        Reserva cita <i class="fa fa-arrow-right ms-3"></i>
       </a>
     </div>
-  </nav>
+</nav>
+
+
+<!-- HERO RESTAURACION -->
+<section class="container-fluid p-0 restauracion-hero-wrapper">
+    <div class="restauracion-hero-bg d-flex align-items-center">
+      <div class="container">
+        <div class="col-lg-6 col-md-10 col-12 text-white">
+          <h1 class="display-4 fw-bold mb-3">Restauración de bicicletas clásicas</h1>
+          <p class="lead mb-4">Recuperamos historia, tacto mecánico y estética original. Sin prisas. Con criterio.</p>
+
+          <div class="d-flex flex-wrap gap-3">
+              <a href="booking.html" class="btn btn-primary py-3 px-4 fw-bold">Pedir presupuesto</a>
+              <a href="contact.html" class="btn btn-outline-light py-3 px-4 fw-bold">Consultar viabilidad</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="container py-5">
+    <div class="mb-5 text-center">
+      <h2 class="mb-3">Cómo abordamos una restauración</h2>
+      <p class="text-muted small">Proceso real. No industrial. No cadenas de montaje.</p>
+    </div>
   
-
-
-
-    <!-- HERO RESTAURACION -->
-    <section class="container-fluid p-0 restauracion-hero-wrapper">
-        <div class="restauracion-hero-bg d-flex align-items-center">
-          <div class="container">
-            <div class="col-lg-6 col-md-10 col-12 text-white">
-              <h1 class="display-4 fw-bold mb-3">Restauración de bicicletas clásicas</h1>
-              <p class="lead mb-4">Recuperamos historia, tacto mecánico y estética original. Sin prisas. Con criterio.</p>
-
-              <div class="d-flex flex-wrap gap-3">
-                  <a href="booking.html" class="btn btn-primary py-3 px-4 fw-bold">Pedir presupuesto</a>
-                  <a href="contact.html" class="btn btn-outline-light py-3 px-4 fw-bold">Consultar viabilidad</a>
-              </div>
-            </div>
-          </div>
+    <div class="row g-4 text-center">
+      
+      <div class="col-lg-4">
+        <div class="resta-step-card shadow-sm p-4 h-100">
+          <span class="step-number">01</span>
+          <h5 class="fw-bold mb-3">Diagnóstico inicial</h5>
+          <p class="small">Evaluación real de cuadro, piezas recuperables y viabilidad del proyecto.</p>
         </div>
-    </section>
-    <section class="container py-5">
-        <div class="mb-5 text-center">
-          <h2 class="mb-3">Cómo abordamos una restauración</h2>
-          <p class="text-muted small">Proceso real. No industrial. No cadenas de montaje.</p>
+      </div>
+  
+      <div class="col-lg-4">
+        <div class="resta-step-card shadow-sm p-4 h-100">
+          <span class="step-number">02</span>
+          <h5 class="fw-bold mb-3">Restauración pieza a pieza</h5>
+          <p class="small">Proceso artesano. Pulidos, mecánica fina, pintura, estética y piezas OEM si es posible.</p>
         </div>
-      
-        <div class="row g-4 text-center">
-          
-          <div class="col-lg-4">
-            <div class="resta-step-card shadow-sm p-4 h-100">
-              <span class="step-number">01</span>
-              <h5 class="fw-bold mb-3">Diagnóstico inicial</h5>
-              <p class="small">Evaluación real de cuadro, piezas recuperables y viabilidad del proyecto.</p>
-            </div>
-          </div>
-      
-          <div class="col-lg-4">
-            <div class="resta-step-card shadow-sm p-4 h-100">
-              <span class="step-number">02</span>
-              <h5 class="fw-bold mb-3">Restauración pieza a pieza</h5>
-              <p class="small">Proceso artesano. Pulidos, mecánica fina, pintura, estética y piezas OEM si es posible.</p>
-            </div>
-          </div>
-      
-          <div class="col-lg-4">
-            <div class="resta-step-card shadow-sm p-4 h-100">
-              <span class="step-number">03</span>
-              <h5 class="fw-bold mb-3">Entrega final</h5>
-              <p class="small">Bici lista para rodar o exponer. Informe final + recomendaciones futuro mantenimiento.</p>
-            </div>
-          </div>
-      
+      </div>
+  
+      <div class="col-lg-4">
+        <div class="resta-step-card shadow-sm p-4 h-100">
+          <span class="step-number">03</span>
+          <h5 class="fw-bold mb-3">Entrega final</h5>
+          <p class="small">Bici lista para rodar o exponer. Informe final + recomendaciones futuro mantenimiento.</p>
         </div>
-      </section>
-      
+      </div>
+  
+    </div>
+</section>
 
-  <!-- GALERIA RESTAURACION -->
+
+<!-- GALERÍA RESTAURACIÓN -->
 <section class="container py-5 border-top">
     <div class="mb-5 text-center">
       <h2 class="mb-3">Algunos proyectos y acabados</h2>
@@ -175,66 +176,63 @@
         <img src="img/P1060382.JPG" class="img-fluid rounded shadow-sm" alt="restauración bicicleta clásica 4">
       </div>
       <div class="col-md-4">
-        <img src="img/bicicleta antigua restaurada 2.JPG" class="img-fluid rounded shadow-sm" alt="restauración bicicleta clásica 5">
+        <img src="img/bicicleta_antigua_restaurada_2.JPG" class="img-fluid rounded shadow-sm" alt="restauración bicicleta clásica 5">
       </div>
       <div class="col-md-4">
         <img src="img/bicicleta-Raleigh-Superbe-01.webp" class="img-fluid rounded shadow-sm" alt="restauración bicicleta clásica 6">
       </div>
     </div>
-  </section>
-  
-  
-  <!-- CTA FINAL RESTAURACION -->
-  <section class="container py-5 text-center">
+</section>
+
+
+<!-- CTA FINAL -->
+<section class="container py-5 text-center">
     <h2 class="mb-3 fw-bold">¿Tienes una clásica que merece volver a rodar?</h2>
     <p class="mb-4">Escríbenos, cuéntanos el modelo y la idea. Aquí se trata con mimo.</p>
     <div class="d-flex justify-content-center gap-3 flex-wrap">
       <a href="booking.html" class="btn btn-primary px-4 py-3 fw-bold">Pedir presupuesto restauración</a>
       <a href="contact.html" class="btn btn-outline-dark px-4 py-3 fw-bold">Consultar proyecto antes</a>
     </div>
-  </section>
-  
-  
+</section>
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-4 col-md-6">
-                    <h4 class="text-light mb-4">Contacto</h4>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Calle del Rosario, 108, Socuéllamos (Ciudad Real)</p>
-                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+34 623 602 702</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>tubiciapunto2025@gmail.com</p>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <h4 class="text-light mb-4">Horario</h4>
-                    <h6 class="text-light">Lunes - Viernes:</h6>
-                    <p class="mb-4">10.00 - 14.00</p><p class="mb-4">17.00 - 21.00</p>
-                    <h6 class="text-light">Sábados:</h6>
-                    <p class="mb-0">10.00 - 14.00</p>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <h4 class="text-light mb-4">Síguenos</h4>
-                    <p>Conoce nuestros proyectos y novedades en redes sociales.</p>
-                    <div class="d-flex pt-2">
-                      <a class="btn btn-social me-2" href="https://www.facebook.com/people/Tu-bici-a-punto/61575602982686/" target="_blank" rel="noopener noreferrer">
-                          <i class="fab fa-facebook-f"></i>
-                      </a>
-                  
-                      <a class="btn btn-social" href="https://www.instagram.com/tubiciapunto/" target="_blank" rel="noopener noreferrer">
-                          <i class="fab fa-instagram"></i>
-                      </a>
-                  </div>                          
-                </div>
+
+<!-- FOOTER -->
+<div class="container-fluid bg-dark text-light footer pt-5 mt-5">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-4 col-md-6">
+                <h4 class="text-light mb-4">Contacto</h4>
+                <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Calle del Rosario, 108, Socuéllamos (Ciudad Real)</p>
+                <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+34 623 602 702</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>tubiciapunto2025@gmail.com</p>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <h4 class="text-light mb-4">Horario</h4>
+                <h6 class="text-light">Lunes - Viernes:</h6>
+                <p class="mb-4">10.00 - 14.00</p>
+                <p class="mb-4">17.00 - 21.00</p>
+                <h6 class="text-light">Sábados:</h6>
+                <p class="mb-0">10.00 - 14.00</p>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <h4 class="text-light mb-4">Síguenos</h4>
+                <p>Conoce nuestros proyectos y novedades en redes sociales.</p>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-social me-2" href="https://www.facebook.com/people/Tu-bici-a-punto/61575602982686/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="btn btn-social" href="https://www.instagram.com/tubiciapunto/" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>                          
             </div>
         </div>
-        <div class="container text-center">
-            <p class="mb-0">&copy; 2025 <strong>Tu Bici a Punto</strong>. Todos los derechos reservados.</p><br>
-        </div>
     </div>
-    <!-- Footer End -->
+    <div class="container text-center">
+        <p class="mb-0">&copy; 2025 <strong>Tu Bici a Punto</strong>. Todos los derechos reservados.</p>
+    </div>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-

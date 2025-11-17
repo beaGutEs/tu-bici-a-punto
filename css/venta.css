@@ -1,0 +1,45 @@
+/* ------------------- VENTA HERO ------------------- */
+
+.venta-hero-wrapper {
+    min-height: 60vh;
+}
+
+.venta-hero-bg {
+    background: url('../img/venta-hero.jpg') center/cover no-repeat;
+    min-height: 60vh;
+    position: relative;
+}
+
+/* overlay igual que suplementos */
+.venta-hero-bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+}
+
+.venta-hero-bg > .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* texto hero */
+.venta-hero-bg h1,
+.venta-hero-bg p,
+.venta-hero-bg a.btn {
+    color: #fff !important;
+    text-shadow: 0 3px 14px rgba(0, 0, 0, 0.95);
+}
+
+.venta-hero-bg h1 {
+    letter-spacing: -0.5px;
+}
+
+/* ------------------- CONTENIDO ------------------- */
+section {
+    scroll-margin-top: 100px;
+}
+
+.venta-info ul li i {
+    color: #D91E2E; /* rojo marca */
+}
